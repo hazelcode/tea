@@ -20,3 +20,5 @@ CMakeUserPresets.json
 
 compiler/tea
 compiler/tea.exe
+.vscode
+build
