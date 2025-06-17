@@ -1,4 +1,4 @@
-- [Español](README-es)
+- [Español](README-es.md)
 
 # TEA Programming Language
 
