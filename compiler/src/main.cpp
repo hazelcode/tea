@@ -1,14 +1,18 @@
 #include <iostream>
+#include "Token.cpp"
+#include "Lexer.cpp"
 
 using namespace std;
+using namespace TEA;
 
 int main(int argc, char** argv) {
-    if(argc > 1) {
-        cout << "Arguments count: " << argc << endl;
-        for(int i = 1; i < argc; i++) {
-            cout << argv[i] << endl;
-        }
-    }
-    
-    cout << "Hello World!" << endl;
+    Lexer* lexer = new Lexer(
+        "var text = \"Hello World!\";"
+        "println(text);"
+    );
+    Token* tk;
+    do {
+        tk = lexer->GetNextToken();
+        cout << tk->Type << " : " << tk->Value << endl;
+    } while(tk->Type != TK_EOF);
 }
