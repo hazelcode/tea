@@ -46,6 +46,9 @@ TEA::Token* TEA::Lexer::GetNextToken() {
             case ';':
                 return AdvanceWithToken(new Token(SEMI, CurrentCharAsString()));
                 break;
+            case ':':
+                return AdvanceWithToken(new Token(COLON, CurrentCharAsString()));
+                break;
             case '(':
                 return AdvanceWithToken(new Token(LPAREN, CurrentCharAsString()));
                 break;

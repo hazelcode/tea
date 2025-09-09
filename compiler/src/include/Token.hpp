@@ -9,6 +9,7 @@ namespace TEA
         EQUALS,
         STRING,
         SEMI,
+        COLON,
         LPAREN,
         RPAREN,
         LCURLBRACE,

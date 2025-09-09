@@ -7,7 +7,7 @@ using namespace TEA;
 
 int main(int argc, char** argv) {
     Lexer* lexer = new Lexer(
-        "var text = \"Hello World!\";"
+        "var text: string = \"Hello World!\";"
         "println(text);"
     );
     Token* tk;
