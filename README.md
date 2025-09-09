@@ -20,6 +20,12 @@ You may:
 - Sell products or services based on it
 - Create forks and derivatives **as long as you also release your code under the same license**
 
+## How to compile
+
+TEA compiler uses vcpkg, you may install [vcpkg](https://vcpkg.io) on your environment and integrate it with CMake.
+
+Please set the `-DCMAKE_TOOLCHAIN_FILE` argument with your vcpkg's CMake toolchain file (usually, when you execute `vcpkg integrate install` it displays the toolchain file location, so no worry).
+
 ## TEA Compatibility
 
 If you develop a compiler, interpreter, tool, or derivative that claims to be compatible with TEA, **you must faithfully follow the official specification** corresponding to the language version.

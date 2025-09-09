@@ -18,6 +18,12 @@ Puedes:
 - Vender productos o servicios basados en él
 - Crear bifurcaciones y derivados **siempre que también liberes tu código bajo la misma licencia**
 
+## Cómo compilar
+
+El compilador TEA usa vcpkg. Puedes instalar [vcpkg](https://vcpkg.io) en tu entorno e integrarlo con CMake.
+
+Configure el argumento `-DCMAKE_TOOLCHAIN_FILE` con el archivo de la cadena de herramientas de CMake de tu vcpkg (normalmente, al ejecutar `vcpkg integrate install`, se muestra la ubicación del archivo de la cadena de herramientas, así que no te preocupes).
+
 ## Compatibilidad con TEA
 
 Si desarrollas un compilador, intérprete, herramienta o derivado que afirma ser compatible con TEA, **debes seguir fielmente la especificación oficial** correspondiente a la versión del lenguaje.
