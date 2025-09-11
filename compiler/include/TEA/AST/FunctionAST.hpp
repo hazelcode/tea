@@ -1,3 +1,4 @@
+#pragma once
 #include <TEA/AST/PrototypeAST.hpp>
 #include <TEA/AST/ExprAST.hpp>
 #include <memory>
