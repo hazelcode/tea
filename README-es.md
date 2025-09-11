@@ -20,9 +20,7 @@ Puedes:
 
 ## Cómo compilar
 
-El compilador TEA usa vcpkg. Puedes instalar [vcpkg](https://vcpkg.io) en tu entorno e integrarlo con CMake.
-
-Configure el argumento `-DCMAKE_TOOLCHAIN_FILE` con el archivo de la cadena de herramientas de CMake de tu vcpkg (normalmente, al ejecutar `vcpkg integrate install`, se muestra la ubicación del archivo de la cadena de herramientas, así que no te preocupes).
+El compilador de TEA está construido bajo el sistema de construcción CMake. Instala CMake y ejecuta `cmake ./` estando en la carpeta compiler.
 
 ## Compatibilidad con TEA
 

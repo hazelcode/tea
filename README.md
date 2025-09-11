@@ -22,9 +22,7 @@ You may:
 
 ## How to compile
 
-TEA compiler uses vcpkg, you may install [vcpkg](https://vcpkg.io) on your environment and integrate it with CMake.
-
-Please set the `-DCMAKE_TOOLCHAIN_FILE` argument with your vcpkg's CMake toolchain file (usually, when you execute `vcpkg integrate install` it displays the toolchain file location, so no worry).
+TEA compiler is builded under CMake building system. Install CMake and run `cmake ./` being in the compiler folder.
 
 ## TEA Compatibility
 
