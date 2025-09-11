@@ -1,6 +1,6 @@
 #include <iostream>
-#include "Token.cpp"
-#include "Lexer.cpp"
+#include <tea/Token.hpp>
+#include "Lexer.hpp"
 
 using namespace std;
 using namespace TEA;
