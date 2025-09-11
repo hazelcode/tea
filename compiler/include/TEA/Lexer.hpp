@@ -1,5 +1,5 @@
 #pragma once
-#include "Token.hpp"
+#include <TEA/Token.hpp>
 
 namespace TEA {
     class Lexer {

@@ -1,4 +1,4 @@
-#include <Lexer.hpp>
+#include <TEA/Lexer.hpp>
 #include <cstdlib>
 #include <cctype>
 #include <cstring>
