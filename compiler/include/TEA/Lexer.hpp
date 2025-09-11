@@ -1,6 +1,8 @@
 #pragma once
 #include <TEA/Token.hpp>
 
+#define ADV_WITH_TK(tk) AdvanceWithToken(new Token(tk, CurrentCharAsString()));
+
 namespace TEA {
     class Lexer {
         public:

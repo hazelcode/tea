@@ -41,28 +41,28 @@ TEA::Token* TEA::Lexer::GetNextToken() {
 
         switch(C) {
             case '=':
-                return AdvanceWithToken(new Token(EQUALS, CurrentCharAsString()));
+                return ADV_WITH_TK(EQUALS);
                 break;
             case ';':
-                return AdvanceWithToken(new Token(SEMI, CurrentCharAsString()));
+                return ADV_WITH_TK(SEMI);
                 break;
             case ':':
-                return AdvanceWithToken(new Token(COLON, CurrentCharAsString()));
+                return ADV_WITH_TK(COLON);
                 break;
             case '(':
-                return AdvanceWithToken(new Token(LPAREN, CurrentCharAsString()));
+                return ADV_WITH_TK(LPAREN);
                 break;
             case ')':
-                return AdvanceWithToken(new Token(RPAREN, CurrentCharAsString()));
+                return ADV_WITH_TK(RPAREN);
                 break;
             case '{':
-                return AdvanceWithToken(new Token(LCURLBRACE, CurrentCharAsString()));
+                return ADV_WITH_TK(LCURLBRACE);
                 break;
             case '}':
-                return AdvanceWithToken(new Token(RCURLBRACE, CurrentCharAsString()));
+                return ADV_WITH_TK(RCURLBRACE);
                 break;
             case ',':
-                return AdvanceWithToken(new Token(COMMA, CurrentCharAsString()));
+                return ADV_WITH_TK(COMMA);
                 break;
         }
     }
