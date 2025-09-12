@@ -2,7 +2,7 @@
 
 # TEA Programming Language
 
-TEA is a modern, minimalist programming language, designed to be lightweight, easy to learn, and powerful. It is inspired by languages such as JavaScript, Dart, and C#.
+TEA is a modern, minimalist programming language, designed to be lightweight, easy to learn, and powerful. It is inspired by languages such as TypeScript, Dart, and C#.
 
 ## Project Goals
 
