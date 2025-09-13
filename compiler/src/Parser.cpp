@@ -6,6 +6,8 @@ TEA::Parser::Parser(std::list<Token*> tokens) : m_tokens(tokens) {}
 TEA::Token* TEA::Parser::GetNextToken() {
     m_currentToken = m_tokens.front();
     m_tokens.pop_front();
+
+    return m_currentToken;
 }
 
 std::unique_ptr<TEA::ExprAST> TEA::Parser::LogError(const char* str) {

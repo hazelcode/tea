@@ -14,9 +14,27 @@ private:
 
         // The current token that needs to be parsed
         Token* m_currentToken;
+
+        /**
+         * Eats the first token of the list, grabs it, and returns it.
+         * Note: After the call to this function, the shifted token is always stored.
+         * Keep that in mind!
+         */
         Token* GetNextToken();
+
+        /**
+         * Send an error report to the stderr stream.
+         */
         std::unique_ptr<ExprAST> LogError(const char* str);
+
+        /**
+         * Send an error report to the stderr stream.
+         */
         std::unique_ptr<PrototypeAST> LogErrorP(const char* str);
+
+        /**
+         * Parses the token to a Number expression AST
+         */
         std::unique_ptr<ExprAST> ParseNumberExpr();
 
 public:
