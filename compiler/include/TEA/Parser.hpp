@@ -37,6 +37,11 @@ private:
          */
         std::unique_ptr<ExprAST> ParseNumberExpr();
 
+        /**
+         * Parses the parenthesis tokens to an expression.
+         */
+        std::unique_ptr<ExprAST> ParseParenExpr();
+
 public:
         Parser(std::list<Token*> tokens);
     };
