@@ -116,3 +116,13 @@ char* TEA::Lexer::CurrentCharAsString() {
 
     return str;
 }
+
+std::list<TEA::Token*> TEA::Lexer::GenTokensList() {
+    std::list<Token*> tokensList = std::list<Token*>();
+
+    do {
+        tokensList.push_back(GetNextToken());
+    } while(tokensList.back()->Type != TK_EOF);
+
+    return tokensList;
+}

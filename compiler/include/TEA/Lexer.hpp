@@ -1,5 +1,6 @@
 #pragma once
 #include <TEA/Token.hpp>
+#include <list>
 
 #define ADV_WITH_TK(tk) AdvanceWithToken(new Token(tk, CurrentCharAsString()));
 
@@ -51,5 +52,10 @@ namespace TEA {
              * Get current char as string;
              */
             char* CurrentCharAsString();
+
+            /**
+             * Generates the tokens and returns the obtained list.
+             */
+            std::list<Token*> GenTokensList();
     };
 }

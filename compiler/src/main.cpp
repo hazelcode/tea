@@ -10,9 +10,9 @@ int main(int argc, char** argv) {
         "var text: string = \"Hello World!\";"
         "println(text);"
     );
-    Token* tk;
-    do {
-        tk = lexer->GetNextToken();
-        cout << tk->Type << " : " << tk->Value << endl;
-    } while(tk->Type != TK_EOF);
+    auto tokens = lexer->GenTokensList();
+
+    for(auto& token : tokens) {
+        cout << token->Type << " : " << token->Value << endl;
+    }
 }
