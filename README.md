@@ -22,7 +22,15 @@ You may:
 
 ## How to compile
 
-TEA compiler is builded under CMake building system. Install CMake and run `cmake ./` being in the compiler folder.
+TEA compiler is builded under CMake building system. **Installing CMake is a requirement**.
+
+### Windows & MacOS
+Run `cmake ./` being in the compiler folder.
+
+### Linux
+Run `cmake ./` being in the compiler folder **OR** execute `scripts/compile.sh` script
+
+*Extra:* You can directly compile and run the compiler executing `scripts/compile.sh run`
 
 ## TEA Compatibility
 
