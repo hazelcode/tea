@@ -22,3 +22,4 @@ compiler/tea
 compiler/tea.exe
 .vscode
 build
+bin
